@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon"/>
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    <!-- Title -->
+    <title>Mon article</title>
+  </head>
+
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+          <div class="avatar avatar-xxl">
+            <!-- change ta photo ici  -->
+            <img src="./assets/img/avatar-demo.jpg" alt="..." class="avatar-img rounded-circle" />
+          </div>
+        </a>
+
+        <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse - permet de rendre le menu responsive -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="article-example.html"> Lien #1 </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Lien #2 </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Lien #3 </a>
+            </li>
+          </ul>
+
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="..." target="_blank">
+            Button
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- IMAGE -->
+    <!-- ICI DANS LA BALISE <section> je viens modifier l'attribut style pour CHANGER L'IMAGE -->
+    <section
+      data-jarallax
+      data-speed=".8"
+      class="py-12 py-md-15 bg-cover jarallax"
+      style="background-image: url('assets/img/header-demo.jpg')"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center">
+            <!-- Heading -->
+            <h1 class="display-2 fw-bold text-white">TITRE ARTICLE</h1>
+
+            <!-- Text -->
+            <p class="lead mb-0 text-white-75">Introduction de l'article</p>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- HEADER -->
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Heading -->
+            <h1 class="display-4 text-center">Exercice CSS</h1>
+
+            <!-- Text -->
+            <p class="lead mb-7 text-center text-muted">
+              Nous voyons dans cet article comment mettre du style sur un site
+              internet. Notamment grace au langage CSS et à ses selecteurs
+            </p>
+
+            <figure class="figure mb-7">
+              <!-- Image -->
+              <img class="figure-img img-fluid rounded lift lift-lg w-100" src="assets/img/photo-6.jpg" alt="..."/>
+
+              <!-- Légende -->
+              <figcaption class="figure-caption text-center">
+                Légende de l'image
+              </figcaption>
+            </figure>
+
+            <!-- Meta -->
+            <div class="row align-items-center py-5 border-top border-bottom">
+              <div class="col-auto">
+                <!-- Avatar -->
+                <div class="avatar avatar-lg">
+                  <img src="assets/img/avatar-demo.jpg" alt="..." class="avatar-img rounded-circle" />
+                </div>
+              </div>
+              <div class="col ms-n5">
+                <!-- Name -->
+                <h6 class="text-uppercase mb-0">Seb</h6>
+
+                <!-- Date -->
+                <time class="fs-sm text-muted" datetime="2019-05-20">
+                  Publié le 18 décembre 2021
+                </time>
+              </div>
+              <div class="col-auto"></div>
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Heading -->
+            <h2 class="fw-bold">Découverte HTML & CSS</h2>
+
+            <!-- Text -->
+            <p>
+              J'ai découvert à quoi ressemble le code des sites internet : le
+              HTML et le CSS ! Ce sont les langages de programmation qui
+              permettent qu'un site s'affiche, comme celui que vous voyez en ce
+              moment.
+            </p>
+            <ul class="mb-0">
+              <li>
+                Le code HTML Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua
+              </li>
+              <li class="mt-4">
+                Le code CSS Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-11 col-xl-10">
+            <!-- Slider -->
+            <div
+              data-flickity='{"wrapAround": true, "pageDots": false, "imagesLoaded": true, "adaptiveHeight": true}'
+            >
+              <div class="w-100">
+                <img src="./assets/img/photo-6.jpg" alt="..." class="img-fluid rounded w-100" />
+              </div>
+              <div class="w-100">
+                <img src="./assets/img/photo-7.jpg" alt="..." class="img-fluid rounded w-100" />
+              </div>
+              <div class="w-100">
+                <img src="./assets/img/photo-5.jpg" alt="..." class="img-fluid rounded w-100" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Heading -->
+            <h3 class="fw-bold">Title example</h3>
+
+            <!-- Text -->
+            <p class="mb-7">
+              Il s'agit d'un site pour apprendre à utiliser les sélecteurs CSS.
+            </p>
+
+            <!-- Divider -->
+            <hr class="hr-md mb-7" />
+
+            <!-- Blockquote -->
+            <blockquote class="blockquote mb-7">
+              <p class="h2 mb-0 text-center text-primary-desat">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </blockquote>
+
+            <!-- Divider -->
+            <hr class="hr-md mb-7" />
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SI TU N'AS RIEN D'AUTRE A RAJOUTER ESSAYE DE SUPPRIMER LA <section> de dessous Ctrl S et regarde le résultat -->
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Heading -->
+            <h3 class="fw-bold">Small heading for a smaller transition</h3>
+
+            <!-- Text -->
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Excepturi reiciendis odio perferendis libero saepe voluptatum
+              fugiat dolore voluptates aut, ut quas doloremque quo ad quis ipsum
+              molestias neque pariatur commodi.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
+              quos, commodi fugiat? Repellat accusantium error quisquam autem
+              magni. Placeat ea dolorem voluptatem sequi veritatis, fugit nisi
+              omnis, aspernatur sint quidem.
+            </p>
+
+            <!-- List -->
+            <ul class="list-unstyled mb-7">
+              <li class="d-flex">
+                <!-- Check -->
+                <div
+                  class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
+                >
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo.
+                </p>
+              </li>
+              <li class="d-flex">
+                <!-- Check -->
+                <div
+                  class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
+                >
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-light">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="py-8 py-md-11 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <!-- Brand -->
+            <img src="./assets/img/avatar-demo.jpg" alt="..."  class="footer-brand img-fluid mb-2" />
+
+            <!-- Text -->
+            <p class="text-gray-700 mb-2">Text Footer</p>
+
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img  src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="..." />
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="..." />
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="..." />
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/pinterest.svg" class="list-social-icon"  alt="..." />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2"></div>
+          <div class="col-6 col-md-4 col-lg-2"></div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0"></div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <!-- Heading -->
+            <h6 class="fw-bold text-uppercase text-gray-700">Navigation</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#" class="text-reset">Link Footer #1</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-reset">Link Footer #2</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-reset">Link Footer #3</a>
+              </li>
+              <li>
+                <a href="#" class="text-reset">Link Footer #4</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    <script src="./assets/js/theme.bundle.js"></script>
+  </body>
+</html>
