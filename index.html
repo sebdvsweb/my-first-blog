@@ -1,421 +1,386 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
 
-    <!-- Title -->
-    <title>TITRE DE LA PAGE</title>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  <title>TITRE DE LA PAGE</title>
+</head>
 
+<body class="bg-light">
 
-  <body class="bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="avatar avatar-xxl">
+          <!-- change ta photo ici  -->
+          <img src="./assets/img/avatar-demo.jpg" alt="..." class="avatar-img rounded-circle" />
+        </div>
+      </a>
 
-        <a class="navbar-brand" href="index.html">
-          <div class="avatar avatar-xxl">
-            <!-- change ta photo ici  -->
-            <img src="./assets/img/avatar-demo.jpg" alt="..." class="avatar-img rounded-circle" />
-          </div>
-        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <!-- Collapse - permet de rendre le menu responsive -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fe fe-x"></i>
         </button>
 
-        <!-- Collapse - permet de rendre le menu responsive -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-        
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fe fe-x"></i>
-          </button>
+        <!-- Navigation -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Lien #1 </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Lien #2 </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Lien #3 </a>
+          </li>
+        </ul>
 
-          <!-- Navigation -->
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="article-example.html"> Lien #1 </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Lien #2 </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Lien #3 </a>
-            </li>
-          </ul>
-
-          <!-- Button -->
-          <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="..." target="_blank">
-            Button
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- SECTION HEADER -->
-
-    <!-- ici tu peux changer l'image de fond de ta page dans style="background-image"-->
-    <section
-      data-jarallax
-      data-speed=".8"
-      class="py-10 py-md-14 overlay overlay-black overlay-60 bg-cover jarallax"
-      style="background-image: url(assets/img/header-demo.jpg)">
-
-      <div class="container">
-        <div class="row justify-content-center">
-        
-          <div class="col-12 col-md-10 col-lg-7 text-center">
-            
-            <!-- Heading -->
-            <h1 class="display-2 fw-bold text-white">Blog Title</h1>
-
-            <!-- Text -->
-            <p class="lead mb-0 text-white-75">
-              Introduction to the blog
-            </p>
-          </div>
-        </div>
-        <!-- / .row -->
-      </div>
-      <!-- / .container -->
-    </section>
-
-    <!-- Arondi -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x text-light">
-        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor" />
-        </svg>
+        <!-- Button -->
+        <a class="btn btn-sm btn-primary ms-auto" href="...">Button</a>
       </div>
     </div>
+  </nav>
 
-    <!-- ARTICLES -->
-    <section class="pt-7 pt-md-10">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <!-- CARD BOOTSTRAP -->
-            <div class="card card-row shadow-light-lg mb-6 lift lift-lg">
-              <div class="row gx-0">
-              
-                <a class="col-12 col-md-6 order-md-2 bg-cover card-img-end" style="background-image: url(assets/img/photo-15.jpg)" href="#">
-                
-                  <!-- Shape (forme arrondie) -->
-                  <div class="shape shape-start shape-fluid-y text-white d-none d-md-block">
-                    <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0h62.759v172C38.62 384 112 517 112 517v173H0V0z" fill="currentColor" />
-                    </svg>
+  <!-- SECTION HEADER -->
+
+  <!-- ici tu peux changer l'image de fond de ta page dans style="background-image"-->
+  <section class="py-10 py-md-14 overlay overlay-black overlay-60 bg-cover"
+    style="background-image: url(assets/img/header-demo.jpg)">
+
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-lg-7 text-center">
+
+          <!-- Heading -->
+          <h1 class="display-2 fw-bold text-white">Blog Title</h1>
+
+          <!-- Text -->
+          <p class="lead mb-0 text-white-75">Introduction to the blog</p>
+        </div>
+      </div>
+      <!-- / .row -->
+    </div>
+    <!-- / .container -->
+  </section>
+
+  <!-- Forme Arrondie - ne pas toucher -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x text-light">
+      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- PREMIER ARTICLE PLEINE LARGEUR -->
+  <section class="pt-7 pt-md-10">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- CARD BOOTSTRAP -->
+          <div class="card card-row shadow-light-lg mb-6 lift lift-lg">
+            <div class="row gx-0">
+
+              <!-- IMAGE DE FOND BLOC DROITE -->
+               <!-- LIEN VERS ARTICLE -->
+              <a class="col-12 col-md-6 order-md-2 bg-cover card-img-end"
+                style="background-image: url(assets/img/photo-15.jpg)" href="#">
+
+                <!-- Shape (forme arrondie) -->
+                <div class="shape shape-start shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h62.759v172C38.62 384 112 517 112 517v173H0V0z" fill="currentColor" />
+                  </svg>
+                </div>
+
+
+              </a>
+              <div class="col-12 col-md-6 order-md-1">
+
+                <!-- BLOC GAUCHE -->
+                 <!-- LIEN VERS ARTICLE -->
+                <a class="card-body" href="">
+                  <!-- Titre -->
+                  <h3>Titre du premier article</h3>
+
+                  <!-- Text -->
+                  <p class="mb-0 text-muted">Ceci est l'emplacement du paragraphe court qui présente le premier article du blog dans ce bloc pleine largeur.</p>
+                </a>
+
+                <!-- LIEN VERS ARTICLE -->
+                <a class="card-meta" href="#!">                  
+                  <hr class="card-meta-divider" />
+
+                  <!-- AVATAR -->
+                  <div class="avatar avatar-sm me-2">
+                    <img src="./assets/img/avatar-demo.jpg" class="avatar-img rounded-circle" />
                   </div>
 
+                  <!-- AUTEUR -->
+                  <h6 class="text-uppercase text-muted me-2 mb-0">Auteur</h6>
 
+                  <!-- DATE -->
+                  <p class="h6 text-uppercase text-muted mb-0 ms-auto">3 Juin</p>
                 </a>
-                <div class="col-12 col-md-6 order-md-1">
-                  <!-- Body de la card -->
-                  <a class="card-body" href="">
-                    <!-- Heading/Titre de la card -->
-                    <h3>First Article Title</h3>
+              </div>
+            </div>
+            <!-- / .row -->
+          </div>
+        </div>
+      </div>
+      <!-- / .row -->
+    </div>
+    <!-- / .container -->
+  </section>
 
-                    <!-- Text de la card -->
-                    <p class="mb-0 text-muted">
-                      The HTML lang attribute is used to identify the language of text content on the web. This information helps search engines return language specific results.
-                    </p>
-                  </a>
+  
+  <!-- SECTION ARTICLES SUR TROIS COLONNES-->
+  <section class="pt-7 pt-md-10">
+    <div class="container">
 
-                  <!-- Meta -->
-                  <a class="card-meta" href="#!">
-                    <!-- Divider -->
-                    <hr class="card-meta-divider" />
+      <!-- RANGEE -->
+      <div class="row align-items-center mb-5">
+        <div class="col-12 col-md">
+          <!-- TITRE DE LA SECTION -->
+          <h3 class="mb-0">Derniers articles</h3>
 
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm me-2">
-                      <img src="./assets/img/avatar-demo.jpg" alt="..." class="avatar-img rounded-circle" />
-                    </div>
+          <!-- SOUS-TITRE DE LA SECTION -->
+          <p class="mb-0 text-muted">Introduction aux articles suivants</p>
+        </div>
+        <div class="col-12 col-md-auto"></div>
+      </div>
 
-                    <!-- Auteur -->
-                    <h6 class="text-uppercase text-muted me-2 mb-0">John Doe</h6>
+      <!-- RANGEE -->
+      <div class="row">
 
-                    <!-- Date -->
-                    <p class="h6 text-uppercase text-muted mb-0 ms-auto">
-                      <time datetime="2019-05-02">May 02</time>
-                    </p>
-                  </a>
+        <!-- PREMIERE COLONNE -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <!-- Card -->
+          <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+
+            <!-- LIEN VERS ARTICLE -->
+            <a class="card-img-top" href="">
+
+              <!-- IMAGE -->
+              <img src="assets/img/photo-6.jpg" alt="..." class="card-img-top" />
+
+              <!-- ARRONDI -->
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x text-white">
+                  <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
+                  </svg>
                 </div>
               </div>
-              <!-- / .row -->
-            </div>
+            </a>
+
+            <!-- LIEN VERS ARTICLE -->
+            <a class="card-body" href="#">
+              <!-- TITRE -->
+              <h3>Titre du second article</h3>
+
+              <!-- Text -->
+              <p class="mb-0 text-muted">Petit paragraphe de présentation du second article de la première colonne</p>
+            </a>
+
+            <!-- LIEN VERS ARTICLE -->
+            <a class="card-meta mt-auto" href="#!">
+              <hr class="card-meta-divider" />
+
+              <!-- AVATAR -->
+              <div class="avatar avatar-sm me-2">
+                <img src="./assets/img/avatar-demo.jpg" class="avatar-img rounded-circle" />
+              </div>
+
+              <!-- AUTEUR -->
+              <h6 class="text-uppercase text-muted me-2 mb-0">Auteur</h6>
+
+              <!-- DATE -->
+              <p class="h6 text-uppercase text-muted mb-0 ms-auto">Date</p>
+            </a>
           </div>
         </div>
-        <!-- / .row -->
+
+  
+
+        <!-- SECONDE COLONNE -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+
+            <!-- LIEN VERS ARTICLE -->
+            <a class="card-img-top" href="#!">
+              <img src="assets/img/photo-14.jpg" alt="..." class="card-img-top" />
+
+              <!-- ARRONDI -->
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x text-white">
+                  <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- LIEN VERS ARTICLE -->
+            <a class="card-body" href="#!">
+              <!-- TITRE -->
+              <h3>Titre du troisième article</h3>
+
+              <!-- TEXTE -->
+              <p class="mb-0 text-muted">Petit paragraphe de présentation du troisième article de la seconde colonne</p>
+            </a>
+
+            <!-- LIEN VERS ARTICLE  -->
+            <a class="card-meta mt-auto" href="#!">
+
+              <hr class="card-meta-divider" />
+
+              <!-- AVATAR -->
+              <div class="avatar avatar-sm me-2">
+                <img src="assets/img/avatar-demo.jpg" class="avatar-img rounded-circle" />
+              </div>
+
+              <!-- AUTEUR -->
+              <h6 class="text-uppercase text-muted me-2 mb-0">Auteur</h6>
+
+              <!-- DATE -->
+              <p class="h6 text-uppercase text-muted mb-0 ms-auto">Date</p>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- TROISIEME COLONNE -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <div class="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
+
+             <!-- LIEN VERS ARTICLE -->
+            <a class="card-img-top" href="#!">
+              <!-- IMAGE -->
+              <img src="assets/img/photo-7.jpg" class="card-img-top" />
+
+              <!-- ARRONDI -->
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x text-white">
+                  <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- LIEN VERS ARTICLE -->
+            <a class="card-body" href="#!">
+              <!-- TITRE -->
+              <h3>Titre du quatrième article</h3>
+
+              <!-- TEXTE -->
+              <p class="mb-0 text-muted">Petit paragraphe de présentation du quatrième article de la troisième colonne</p>
+            </a>
+
+             <!-- LIEN VERS ARTICLE -->
+            <a class="card-meta mt-auto" href="#!">
+              <hr class="card-meta-divider" />
+
+              <!-- AVATAR -->
+              <div class="avatar avatar-sm me-2">
+                <img src="assets/img/avatar-demo.jpg" alt="..." class="avatar-img rounded-circle" />
+              </div>
+
+              <!-- AUTEUR -->
+              <h6 class="text-uppercase text-muted me-2 mb-0">Auteur</h6>
+
+              <!-- DATE -->
+              <p class="h6 text-uppercase text-muted mb-0 ms-auto">May</p>
+            </a>
+          </div>
+        </div>
       </div>
-      <!-- / .container -->
-    </section>
+      <!-- / .row -->
+    </div>
+    <!-- / .container -->
+  </section>
 
-    <!-- ARTICLES -->
-    <section class="pt-7 pt-md-10">
-      <div class="container">
-        <div class="row align-items-center mb-5">
-          <div class="col-12 col-md">
-            <!-- Heading -->
-            <h3 class="mb-0">Derniers articles</h3>
 
-            <!-- Text -->
-            <p class="mb-0 text-muted">Introduction aux articles</p>
-          </div>
-          <div class="col-12 col-md-auto"></div>
+  <!-- FOOTER -->
+  <footer class="py-8 py-md-11 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
+          <!-- Brand -->
+          <img src="./assets/img/avatar-demo.jpg" alt="..." class="footer-brand img-fluid mb-2" />
+
+          <!-- Text -->
+          <p class="text-gray-700 mb-2">Text Footer</p>
+
+          <!-- Social -->
+          <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+            <li class="list-inline-item list-social-item me-3">
+              <a href="#!" class="text-decoration-none">
+                <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" />
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item me-3">
+              <a href="#!" class="text-decoration-none">
+                <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" />
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item">
+              <a href="#!" class="text-decoration-none">
+                <img src="./assets/img/icons/social/pinterest.svg" class="list-social-icon" />
+              </a>
+            </li>
+          </ul>
         </div>
-        <!-- / .row -->
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-            <!-- Card -->
-            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
-              <!-- Image -->
-              <!-- ici je met le lien vers l'article au clic sur la photo -->
-              <a class="card-img-top" href="">
-                <!-- Image -->
-                <!-- ici tu peux mettre l'image de ton article dans src="" -->
-                <img src="assets/img/photo-6.jpg" alt="..." class="card-img-top" />
+        <div class="col-6 col-md-4 col-lg-2"></div>
+        <div class="col-6 col-md-4 col-lg-2"></div>
+        <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0"></div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <!-- Heading -->
+          <h6 class="fw-bold text-uppercase text-gray-700">Navigation</h6>
 
-                <!-- Arrondi -->
-                <div class="position-relative">
-                  <div class="shape shape-bottom shape-fluid-x text-white">
-                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
-                    </svg>
-                  </div>
-                </div>
-              </a>
-
-              <!-- Body -->
-              <!-- ICI MET LE LIEN href VERS TON ARTICLE AU CLIC SUR LA CARD  -->
-              <a class="card-body" href="#">
-                <!-- Heading -->
-                <!-- ICI TU PEUX METTRE LE TITRE DE TON ARTICLE DANS LE H3 -->
-                <h3>Cafe Coworking Has Become the Norm.</h3>
-
-                <!-- Text -->
-                <!-- Un petit texte pour décrire ton article ?-->
-                <p class="mb-0 text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  nec condimentum quam.
-                </p>
-              </a>
-
-              <!-- Meta -->
-              <!-- ICI MET LE LIEN href VERS TON ARTICLE AU CLIC SUR LA CARD  -->
-              <a class="card-meta mt-auto" href="#!">
-                <!-- Divider -->
-                <hr class="card-meta-divider" />
-
-                <!-- Avatar -->
-                <div class="avatar avatar-sm me-2">
-                  <!-- change ta photo ici  -->
-                  <img src="./assets/img/avatar-demo.jpg" alt="..." class="avatar-img rounded-circle" />
-                </div>
-
-                <!-- Auteur -->
-                <h6 class="text-uppercase text-muted me-2 mb-0">Author</h6>
-
-                <!-- Date -->
-                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
-                  <time datetime="2019-05-02">Date</time>
-                </p>
-              </a>
-            </div>
-          </div>
-
-          <!-- A PARTIR D'ICI LE CODE DE LA LIGNE 126 A 194 SE REPETE, IL S'AGIT DES CARDS POUR LES ARTICLES
-          DONC LES CONSIGNES SONT LES MEMES -->
-
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-            <!-- Card -->
-            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
-
-              <!-- Image -->
-              <!-- ici je met le lien vers l'article au clic sur l'image -->
-              <a class="card-img-top" href="#!">
-                <img src="assets/img/photo-14.jpg" alt="..." class="card-img-top" />
-
-                <!-- Arrondi -->
-                <div class="position-relative">
-                  <div class="shape shape-bottom shape-fluid-x text-white">
-                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
-                    </svg>
-                  </div>
-                </div>
-              </a>
-
-              <!-- Body -->
-              <!-- ICI MET LE LIEN href VERS TON ARTICLE AU CLIC SUR LA CARD  -->
-              <a class="card-body" href="#!">
-                <!-- Heading -->
-                <!-- CHANGE LE TITRE -->
-                <h3>Weekly Roundtable Meetings Saved Us.</h3>
-
-                <!-- Text -->
-                <!-- CHANGE LE TEXTE -->
-                <p class="mb-0 text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  nec condimentum quam.
-                </p>
-              </a>
-
-              <!-- Meta -->
-              <!-- ICI MET LE LIEN href VERS TON ARTICLE AU CLIC SUR LA CARD  -->
-              <a class="card-meta mt-auto" href="#!">
-                <!-- Divider -->
-                <hr class="card-meta-divider" />
-
-                <!-- Avatar -->
-                <div class="avatar avatar-sm me-2">
-                  <!-- METS TA PHOTO -->
-                  <img src="assets/img/avatar-demo.jpg" alt="..." class="avatar-img rounded-circle" />
-                </div>
-
-                <!-- Author -->
-                <h6 class="text-uppercase text-muted me-2 mb-0">Author</h6>
-
-                <!-- Date -->Date
-                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
-                  <time datetime="2019-05-02">DATE</time>
-                </p>
-              </a>
-            </div>
-          </div>
-
-          <!-- A PARTIR D'ICI LE CODE DE LA LIGNE 199 A 267 SE REPETE, IL S'AGIT DES CARDS POUR LES ARTICLES
-          DONC LES CONSIGNES SONT LES MEMES, CETTE FOIS PAS DE COMMENTAIRE POUR VOUS AIDER -->
-
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-            <!-- Card -->
-            <div class="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
-              <!-- Image -->
-              <a class="card-img-top" href="#!">
-                <!-- Image -->
-                <img src="assets/img/photo-7.jpg" alt="..." class="card-img-top"  />
-
-                <!-- Arrondi -->
-                <div class="position-relative">
-                  <div class="shape shape-bottom shape-fluid-x text-white">
-                    <svg viewBox="0 0 2880 480" fill="none"  xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"  clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor" />
-                    </svg>
-                  </div>
-                </div>
-              </a>
-
-              <!-- Body -->
-              <a class="card-body" href="#!">
-                <!-- Heading -->
-                <h3>Nature Can Save Your Creative Side.</h3>
-
-                <!-- Text -->
-                <p class="mb-0 text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  nec condimentum quam.
-                </p>
-              </a>
-
-              <!-- Meta -->
-              <a class="card-meta mt-auto" href="#!">
-                <!-- Divider -->
-                <hr class="card-meta-divider" />
-
-                <!-- Avatar -->
-                <div class="avatar avatar-sm me-2">
-                  <img src="assets/img/avatar-demo.jpg" alt="..." class="avatar-img rounded-circle" />
-                </div>
-
-                <!-- Author -->
-                <h6 class="text-uppercase text-muted me-2 mb-0">Ab Hadley</h6>
-
-                <!-- Date -->
-                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
-                  <time datetime="2019-05-02">May 02</time>
-                </p>
-              </a>
-            </div>
-          </div>
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-0">
+            <li class="mb-3">
+              <a href="#" class="text-reset">Link Footer #1</a>
+            </li>
+            <li class="mb-3">
+              <a href="#" class="text-reset">Link Footer #2</a>
+            </li>
+            <li class="mb-3">
+              <a href="#" class="text-reset">Link Footer #3</a>
+            </li>
+            <li>
+              <a href="#" class="text-reset">Link Footer #4</a>
+            </li>
+          </ul>
         </div>
-        <!-- / .row -->
       </div>
-      <!-- / .container -->
-    </section>
+      <!-- / .row -->
+    </div>
+    <!-- / .container -->
+  </footer>
 
+  <script src="./assets/js/vendor.bundle.js"></script>
+  <script src="./assets/js/theme.bundle.js"></script>
+</body>
 
-    <!-- FOOTER -->
-    <footer class="py-8 py-md-11 bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 col-lg-3">
-            <!-- Brand -->
-            <img src="./assets/img/avatar-demo.jpg" alt="..."  class="footer-brand img-fluid mb-2" />
-
-            <!-- Text -->
-            <p class="text-gray-700 mb-2">Text Footer</p>
-
-            <!-- Social -->
-            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
-              <li class="list-inline-item list-social-item me-3">
-                <a href="#!" class="text-decoration-none">
-                  <img  src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="..." />
-                </a>
-              </li>
-              <li class="list-inline-item list-social-item me-3">
-                <a href="#!" class="text-decoration-none">
-                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="..." />
-                </a>
-              </li>
-              <li class="list-inline-item list-social-item me-3">
-                <a href="#!" class="text-decoration-none">
-                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="..." />
-                </a>
-              </li>
-              <li class="list-inline-item list-social-item">
-                <a href="#!" class="text-decoration-none">
-                  <img src="./assets/img/icons/social/pinterest.svg" class="list-social-icon"  alt="..." />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2"></div>
-          <div class="col-6 col-md-4 col-lg-2"></div>
-          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0"></div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <!-- Heading -->
-            <h6 class="fw-bold text-uppercase text-gray-700">Navigation</h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-0">
-              <li class="mb-3">
-                <a href="#" class="text-reset">Link Footer #1</a>
-              </li>
-              <li class="mb-3">
-                <a href="#" class="text-reset">Link Footer #2</a>
-              </li>
-              <li class="mb-3">
-                <a href="#" class="text-reset">Link Footer #3</a>
-              </li>
-              <li>
-                <a href="#" class="text-reset">Link Footer #4</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- / .row -->
-      </div>
-      <!-- / .container -->
-    </footer>
-
-    <script src="./assets/js/vendor.bundle.js"></script>
-    <script src="./assets/js/theme.bundle.js"></script>
-  </body>
 </html>
